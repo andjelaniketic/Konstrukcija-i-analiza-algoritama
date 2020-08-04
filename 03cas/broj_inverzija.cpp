@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//racuna sumu elemenata iz intervala [niz[i], max_el]
 int prebroj_inverzije(vector<int> &drvo, int k, int x, int y, int a, int b){
 	if(x>b || y<a)
 		return 0;
@@ -18,6 +19,8 @@ int prebroj_inverzije(vector<int> &drvo, int k, int x, int y, int a, int b){
 	
 }
 
+//popunimo mesto sa 1 kao e broj pozicije u drvetu je broj koji se pojavio
+//index je niz[i] odnosno broj koji se pojavio i predstavlja poziciju u drvetu na koju upisujemo 1
 void dodaj_el_u_drvo(vector<int> &drvo, int k, int x, int y, int index){
 	if(x == y){
 		drvo[k] = 1;
