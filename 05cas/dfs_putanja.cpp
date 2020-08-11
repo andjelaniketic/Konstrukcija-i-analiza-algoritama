@@ -76,16 +76,13 @@ int main(){
 
 	vector<int> rez;
 	
-	DFS(G, u, v, rez);
-	
-	if(!get_nadjen(G))
-		cout << "Nema puta\n";
-	else{
+	if(DFS(G, u, v, rez)){
 		int i;
 		for(i=0; i<rez.size()-1; i++)
 			cout << rez[i] << " ->";
 		cout << rez[i] << endl;
-	}
+	}else
+		cout << "Nema puta\n";
 	
 	return 0;
 }
