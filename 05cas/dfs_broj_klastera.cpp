@@ -8,7 +8,6 @@ struct Graph{
 	int V;
 	vector<bool> posecen;
 	
-	int min_grana;
 	int klasteri;
 };
 
