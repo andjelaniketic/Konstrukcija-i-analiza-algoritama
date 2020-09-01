@@ -9,9 +9,9 @@ struct tacka
 
 void polozaj(tacka A, tacka B, tacka P){
 	int s = (B.y - A.y)*P.x + (A.x - B.x)*P.y + (B.x*A.y - A.x*B.y);
-	if(s > 0)
+	if(s < 0)
 		cout << "Tacka je ispod prave\n";
-	else if(s < 0)
+	else if(s > 0)
 		cout << "Tacka je iznad prave\n";
 	else
 		cout << "Tacka je na pravoj\n";
